@@ -10,11 +10,11 @@ function App() {
     axios.get('/api/jokes')
       .then((response) => {
         setjokes(response.data)
-        console.log('Jokes fetched successfully:', response.data);
+        console.log('Jokes fetched :', response.data);
         
       })
       .catch((error) => {
-        console.error('Error fetching jokes:', error)
+        console.error('Error fetching :', error)
       })
   }, [])
 
